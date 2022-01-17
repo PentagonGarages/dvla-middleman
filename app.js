@@ -18,7 +18,7 @@ app.post("/api/vehicleInformation", async (request, response) => {
 
         console.log(axiosResponse.data);
 
-        response.send(axiosResponse.data);
+        response.send(axios);
     } catch (error) {
         response.json({
             Message: error.message
